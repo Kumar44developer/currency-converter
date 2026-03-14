@@ -14,6 +14,8 @@ describe("getRates", () => {
   });
 
 
+  it("builds URL and returns parsed data", async () => {
+    const payload = { amount: 5, base: "USD", rates: { EUR: 4.5 } };
 
 
 
