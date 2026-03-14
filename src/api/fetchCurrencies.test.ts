@@ -52,7 +52,8 @@ describe("fetchCurrencies", () => {
     );
   });
 
-
+  it("propagates fetch rejection errors", async () => {
+    const err = new Error("network down");
 
 
 
