@@ -18,7 +18,8 @@ describe("fetchCurrencies", () => {
       .fn()
       .mockResolvedValue({ USD: "United States Dollar", EUR: "Euro" });
     globalThis.fetch = vi
-
+      .fn()
+      .mockResolvedValue({ ok: true, json: mockJson } as any);
 
 
 
