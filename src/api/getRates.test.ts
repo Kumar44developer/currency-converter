@@ -23,7 +23,9 @@ describe("getRates", () => {
     expect(res).toEqual(payload);
     const calledUrl = (globalThis.fetch as any).mock.calls[0][0] as string;
     expect(calledUrl).toContain("amount=5");
-
+    expect(calledUrl).toContain("from=USD");
+    expect(calledUrl).toContain("to=EUR");
+  });
 
 
 
