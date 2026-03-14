@@ -23,6 +23,9 @@ describe("fetchCurrencies", () => {
 
 
 
+    const result = await fetchCurrencies();
+    expect(result).toEqual({ USD: "United States Dollar", EUR: "Euro" });
+
 
 
 
