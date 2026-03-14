@@ -15,7 +15,9 @@ describe("fetchCurrencies", () => {
 
   it("returns currencies on success", async () => {
     const mockJson = vi
-
+      .fn()
+      .mockResolvedValue({ USD: "United States Dollar", EUR: "Euro" });
+    globalThis.fetch = vi
 
 
 
