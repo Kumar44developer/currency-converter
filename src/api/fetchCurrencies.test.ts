@@ -11,3 +11,34 @@ describe("fetchCurrencies", () => {
            afterEach(() => {
     globalThis.fetch = originalFetch as any;
   });
+
+
+  it("returns currencies on success", async () => {
+    const mockJson = vi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
