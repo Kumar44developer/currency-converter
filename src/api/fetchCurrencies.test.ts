@@ -32,7 +32,8 @@ describe("fetchCurrencies", () => {
   });
 
 
-
+  it("throws on non-ok response", async () => {
+    globalThis.fetch = vi.fn().mockResolvedValue({ ok: false } as any);
 
 
 
