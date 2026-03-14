@@ -3,7 +3,10 @@ import { getRates } from "./getRates";
 
 const originalFetch = globalThis.fetch;
 
-
+describe("getRates", () => {
+  beforeEach(() => {
+    vi.resetAllMocks();
+  });
 
 
 
