@@ -39,7 +39,8 @@ describe("fetchCurrencies", () => {
     );
   });
 
-
+  it("passes through AbortSignal", async () => {
+    const controller = new AbortController();
 
 
 
