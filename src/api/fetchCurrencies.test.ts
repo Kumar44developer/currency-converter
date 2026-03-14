@@ -41,7 +41,8 @@ describe("fetchCurrencies", () => {
 
   it("passes through AbortSignal", async () => {
     const controller = new AbortController();
-
+    const mockJson = vi.fn().mockResolvedValue({});
+    globalThis.fetch = vi
 
 
 
