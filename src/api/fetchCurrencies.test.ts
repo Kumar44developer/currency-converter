@@ -54,7 +54,10 @@ describe("fetchCurrencies", () => {
 
   it("propagates fetch rejection errors", async () => {
     const err = new Error("network down");
-
+    globalThis.fetch = vi.fn().mockRejectedValue(err);
+    await expect(fetchCurrencies()).rejects.toBe(err);
+  });
+});
 
 
 
