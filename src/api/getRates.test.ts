@@ -19,7 +19,8 @@ describe("getRates", () => {
     const json = vi.fn().mockResolvedValue(payload);
     globalThis.fetch = vi.fn().mockResolvedValue({ ok: true, json } as any);
 
-
+    const res = await getRates(5, "USD", "EUR");
+    expect(res).toEqual(payload);
 
 
 
