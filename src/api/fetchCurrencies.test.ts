@@ -25,7 +25,11 @@ describe("fetchCurrencies", () => {
 
     const result = await fetchCurrencies();
     expect(result).toEqual({ USD: "United States Dollar", EUR: "Euro" });
-
+    expect(globalThis.fetch).toHaveBeenCalledWith(
+      "https://api.frankfurter.app/currencies",
+      { signal: undefined }
+    );
+  });
 
 
 
