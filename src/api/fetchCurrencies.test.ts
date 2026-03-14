@@ -46,7 +46,11 @@ describe("fetchCurrencies", () => {
       .fn()
       .mockResolvedValue({ ok: true, json: mockJson } as any);
     await fetchCurrencies(controller.signal);
-
+    expect(globalThis.fetch).toHaveBeenCalledWith(
+      "https://api.frankfurter.app/currencies",
+      { signal: controller.signal }
+    );
+  });
 
 
 
