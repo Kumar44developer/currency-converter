@@ -9,6 +9,9 @@ describe("getRates", () => {
   });
 
 
+  afterEach(() => {
+    globalThis.fetch = originalFetch as any;
+  });
 
 
 
