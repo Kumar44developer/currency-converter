@@ -28,6 +28,8 @@ describe("getRates", () => {
   });
 
 
+  it("throws with status code on error", async () => {
+    globalThis.fetch = vi
 
 
 
