@@ -7,3 +7,7 @@ describe("fetchCurrencies", () => {
   beforeEach(() => {
     vi.resetAllMocks();
   });
+
+           afterEach(() => {
+    globalThis.fetch = originalFetch as any;
+  });
