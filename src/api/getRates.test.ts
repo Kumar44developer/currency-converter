@@ -47,7 +47,9 @@ describe("getRates", () => {
     const calledUrl = (globalThis.fetch as any).mock.calls[0][0] as string;
     const u = new URL(calledUrl);
     expect(u.searchParams.get("amount")).toBe("1.25");
-
+    expect(u.searchParams.get("from")).toBe("GBP");
+    expect(u.searchParams.get("to")).toBe("JPY");
+  });
 
 
 
