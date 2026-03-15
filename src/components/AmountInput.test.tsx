@@ -39,6 +39,10 @@ describe("AmountInput", () => {
   });
 
 
+  it("shows helper text with aria-describedby", () => {
+    const onChange = vi.fn();
+    render(<AmountInput value="" onChange={onChange} />);
+    const help = screen.getByText(/up to 12 digits/i);
 
 
 
