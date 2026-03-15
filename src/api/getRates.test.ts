@@ -43,6 +43,8 @@ describe("getRates", () => {
     globalThis.fetch = vi.fn().mockResolvedValue({ ok: true, json } as any);
 
 
+    await getRates(1.25, "GBP", "JPY");
+    const calledUrl = (globalThis.fetch as any).mock.calls[0][0] as string;
 
 
 
