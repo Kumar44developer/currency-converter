@@ -43,7 +43,11 @@ describe("AmountInput", () => {
     const onChange = vi.fn();
     render(<AmountInput value="" onChange={onChange} />);
     const help = screen.getByText(/up to 12 digits/i);
-
+    const input = screen.getByLabelText(/enter amount/i);
+    expect(help).toBeInTheDocument();
+    expect(input).toHaveAttribute("aria-describedby");
+  });
+});
 
 
 
