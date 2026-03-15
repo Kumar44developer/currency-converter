@@ -33,7 +33,10 @@ describe("AmountInput", () => {
   it("keeps only the first decimal point (subsequent digits kept)", () => {
     const onChange = vi.fn();
     render(<AmountInput value="" onChange={onChange} />);
-
+    const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    fireEvent.change(input, { target: { value: "1.2.3.4" } });
+    expect(onChange).toHaveBeenCalledWith("1.2.34");
+  });
 
 
 
