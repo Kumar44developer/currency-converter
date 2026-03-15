@@ -15,7 +15,10 @@ describe("AmountInput", () => {
   it("blocks updates exceeding max integer digits", () => {
     const onChange = vi.fn();
     render(<AmountInput value="" onChange={onChange} maxIntegerDigits={2} />);
-
+    const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    fireEvent.change(input, { target: { value: "123" } });
+    expect(onChange).not.toHaveBeenCalled();
+  });
 
 
 
