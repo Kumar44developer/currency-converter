@@ -51,7 +51,8 @@ describe("getRates", () => {
     expect(u.searchParams.get("to")).toBe("JPY");
   });
 
-
+  it("propagates fetch rejection", async () => {
+    const err = new Error("offline");
 
 
 
