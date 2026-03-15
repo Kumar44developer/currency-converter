@@ -39,7 +39,8 @@ describe("getRates", () => {
 
   it("supports decimal amount and encodes params", async () => {
     const payload = { amount: 1.25, base: "GBP", rates: { JPY: 200.55 } };
-
+    const json = vi.fn().mockResolvedValue(payload);
+    globalThis.fetch = vi.fn().mockResolvedValue({ ok: true, json } as any);
 
 
 
