@@ -45,7 +45,8 @@ describe("getRates", () => {
 
     await getRates(1.25, "GBP", "JPY");
     const calledUrl = (globalThis.fetch as any).mock.calls[0][0] as string;
-
+    const u = new URL(calledUrl);
+    expect(u.searchParams.get("amount")).toBe("1.25");
 
 
 
