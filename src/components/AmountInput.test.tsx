@@ -8,3 +8,6 @@ describe("AmountInput", () => {
     const onChange = vi.fn();
     render(<AmountInput value="" onChange={onChange} />);
     const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    fireEvent.change(input, { target: { value: "12a.3b" } });
+    expect(onChange).toHaveBeenCalledWith("12.3");
+  });
