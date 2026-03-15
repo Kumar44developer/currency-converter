@@ -30,7 +30,9 @@ describe("AmountInput", () => {
   });
 
 
-
+  it("keeps only the first decimal point (subsequent digits kept)", () => {
+    const onChange = vi.fn();
+    render(<AmountInput value="" onChange={onChange} />);
 
 
 
