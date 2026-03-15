@@ -21,7 +21,9 @@ describe("AmountInput", () => {
   });
 
 
-
+  it("allows exactly max integer digits", () => {
+    const onChange = vi.fn();
+    render(<AmountInput value="" onChange={onChange} maxIntegerDigits={3} />);
 
 
 
