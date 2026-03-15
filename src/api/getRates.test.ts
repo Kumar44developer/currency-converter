@@ -30,7 +30,12 @@ describe("getRates", () => {
 
   it("throws with status code on error", async () => {
     globalThis.fetch = vi
-
+      .fn()
+      .mockResolvedValue({ ok: false, status: 503 } as any);
+    await expect(getRates(1, "USD", "EUR")).rejects.toThrow(
+      "Frankfurter error: 503"
+    );
+  });
 
 
 
