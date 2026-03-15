@@ -24,7 +24,10 @@ describe("AmountInput", () => {
   it("allows exactly max integer digits", () => {
     const onChange = vi.fn();
     render(<AmountInput value="" onChange={onChange} maxIntegerDigits={3} />);
-
+    const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    fireEvent.change(input, { target: { value: "999" } });
+    expect(onChange).toHaveBeenCalledWith("999");
+  });
 
 
 
