@@ -53,6 +53,10 @@ describe("getRates", () => {
 
   it("propagates fetch rejection", async () => {
     const err = new Error("offline");
+    globalThis.fetch = vi.fn().mockRejectedValue(err);
+    await expect(getRates(2, "USD", "EUR")).rejects.toBe(err);
+  });
+});
 
 
 
