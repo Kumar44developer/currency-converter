@@ -41,7 +41,9 @@ describe("CurrencySelect", () => {
         disabledCodes={["USD"]}
       />
     );
-
+    const option = screen.getByRole("option", { name: /🇺🇸 usd/i });
+    expect(option).toBeDisabled();
+  });
 
 
 
