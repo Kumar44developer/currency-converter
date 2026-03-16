@@ -43,7 +43,8 @@ export default function AmountInput({
         className="input"
         placeholder="1"
         aria-describedby={helpId}
-
+        pattern="[0-9]*[.,]?[0-9]*"
+      />
 
 
 
