@@ -31,7 +31,11 @@ describe("CurrencySelect", () => {
 
   it("disables provided codes", () => {
     const onChange = vi.fn();
-
+    render(
+      <CurrencySelect
+        id="to"
+        label="To"
+        value="USD"
 
 
 
