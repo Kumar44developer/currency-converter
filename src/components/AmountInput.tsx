@@ -23,7 +23,10 @@ export default function AmountInput({
 
     const integerPart = cleaned.split(".")[0];
     if (integerPart.length > maxIntegerDigits) {
-
+      return;
+    }
+    onChange(cleaned);
+  };
 
 
 
