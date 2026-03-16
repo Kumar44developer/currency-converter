@@ -45,7 +45,8 @@ export default function AmountInput({
         aria-describedby={helpId}
         pattern="[0-9]*[.,]?[0-9]*"
       />
-
+      <small id={helpId} className="help">
+        Up to 12 digits allowed before the decimal point.
 
 
 
