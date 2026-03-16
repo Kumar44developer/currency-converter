@@ -11,7 +11,9 @@ const currencies = [
 ];
 
 
-
+describe("CurrencySelect", () => {
+  it("renders options and calls onChange", () => {
+    const onChange = vi.fn();
 
 
 
