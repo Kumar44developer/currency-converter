@@ -18,3 +18,22 @@ export default function AmountInput({
     const raw = e.target.value;
     let cleaned = raw.replace(/[^0-9.]/g, "");
     cleaned = cleaned.replace(/(\..*)\./g, "$1"); 
+
+
+
+    const integerPart = cleaned.split(".")[0];
+    if (integerPart.length > maxIntegerDigits) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
