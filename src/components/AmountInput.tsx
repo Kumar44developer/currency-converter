@@ -10,3 +10,6 @@ type Props = {
 export default function AmountInput({
   value,
   onChange,
+  maxIntegerDigits = 12,
+}: Props) {
+  const helpId = "amount-help";
