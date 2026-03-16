@@ -13,3 +13,6 @@ export default function AmountInput({
   maxIntegerDigits = 12,
 }: Props) {
   const helpId = "amount-help";
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const raw = e.target.value;
