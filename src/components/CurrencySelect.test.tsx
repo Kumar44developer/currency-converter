@@ -36,7 +36,11 @@ describe("CurrencySelect", () => {
         id="to"
         label="To"
         value="USD"
-
+        onChange={onChange}
+        currencies={currencies}
+        disabledCodes={["USD"]}
+      />
+    );
 
 
 
