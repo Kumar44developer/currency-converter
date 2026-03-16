@@ -33,7 +33,10 @@ export default function AmountInput({
     <div>
       <label htmlFor="amount">Enter Amount</label>
       <input
-
+        id="amount"
+        type="number"
+        inputMode="decimal"
+        min={0}
 
 
 
