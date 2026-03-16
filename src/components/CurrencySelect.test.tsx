@@ -29,7 +29,8 @@ describe("CurrencySelect", () => {
   });
 
 
-
+  it("disables provided codes", () => {
+    const onChange = vi.fn();
 
 
 
