@@ -5,7 +5,10 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import CurrencySelect from "./CurrencySelect";
 
 
-
+const currencies = [
+  { code: "EUR", name: "Euro", flag: "🇪🇺" },
+  { code: "USD", name: "US Dollar", flag: "🇺🇸" },
+];
 
 
 
