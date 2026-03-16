@@ -46,6 +46,10 @@ describe("CurrencySelect", () => {
   });
 
 
+  it("renders code when flag missing", () => {
+    const onChange = vi.fn();
+  
+
 
 
 
