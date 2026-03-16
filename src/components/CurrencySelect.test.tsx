@@ -52,7 +52,11 @@ describe("CurrencySelect", () => {
       <CurrencySelect
         id="to"
         label="To"  
-
+        value="USD"
+        onChange={onChange}
+        currencies={[{ code: "JPY" }, { code: "USD" }]}
+      />
+    );
 
 
 
