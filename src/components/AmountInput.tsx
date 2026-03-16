@@ -5,3 +5,8 @@ type Props = {
   onChange: (value: string) => void;
   maxIntegerDigits?: number; // limit digits before decimal point
 };
+
+
+export default function AmountInput({
+  value,
+  onChange,
