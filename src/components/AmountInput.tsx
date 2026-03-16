@@ -16,3 +16,5 @@ export default function AmountInput({
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const raw = e.target.value;
+    let cleaned = raw.replace(/[^0-9.]/g, "");
+    cleaned = cleaned.replace(/(\..*)\./g, "$1"); 
