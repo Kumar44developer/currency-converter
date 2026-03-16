@@ -29,7 +29,10 @@ export default function AmountInput({
   };
 
 
-
+  return (
+    <div>
+      <label htmlFor="amount">Enter Amount</label>
+      <input
 
 
 
