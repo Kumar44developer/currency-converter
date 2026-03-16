@@ -1,2 +1,7 @@
 import React from "react";
 
+type Props = {
+  value: string;
+  onChange: (value: string) => void;
+  maxIntegerDigits?: number; // limit digits before decimal point
+};
