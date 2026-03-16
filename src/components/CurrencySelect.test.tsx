@@ -57,7 +57,8 @@ describe("CurrencySelect", () => {
         currencies={[{ code: "JPY" }, { code: "USD" }]}
       />
     );
-
+    expect(screen.getByRole("option", { name: /jpy/i })).toBeInTheDocument();
+  });
 
 
 
