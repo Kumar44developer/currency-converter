@@ -37,7 +37,9 @@ export default function AmountInput({
         type="number"
         inputMode="decimal"
         min={0}
-
+        step={0.01}
+        value={value}
+        onChange={handleChange}
 
 
 
