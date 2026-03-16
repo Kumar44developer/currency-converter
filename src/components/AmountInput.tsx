@@ -47,7 +47,10 @@ export default function AmountInput({
       />
       <small id={helpId} className="help">
         Up to 12 digits allowed before the decimal point.
-
+      </small>
+    </div>
+  );
+}
 
 
 
