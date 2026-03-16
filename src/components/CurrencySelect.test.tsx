@@ -23,7 +23,10 @@ describe("CurrencySelect", () => {
         currencies={currencies}
       />
     );
-
+    const select = screen.getByLabelText(/from/i) as HTMLSelectElement;
+    fireEvent.change(select, { target: { value: "USD" } });
+    expect(onChange).toHaveBeenCalledWith("USD");
+  });
 
 
 
