@@ -14,7 +14,15 @@ const currencies = [
 describe("CurrencySelect", () => {
   it("renders options and calls onChange", () => {
     const onChange = vi.fn();
-
+    render(
+      <CurrencySelect
+        id="from"
+        label="From"
+        value="EUR"
+        onChange={onChange}
+        currencies={currencies}
+      />
+    );
 
 
 
