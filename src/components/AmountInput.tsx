@@ -40,7 +40,9 @@ export default function AmountInput({
         step={0.01}
         value={value}
         onChange={handleChange}
-
+        className="input"
+        placeholder="1"
+        aria-describedby={helpId}
 
 
 
