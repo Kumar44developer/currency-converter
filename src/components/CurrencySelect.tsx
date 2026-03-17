@@ -79,7 +79,9 @@ export default function CurrencySelect({
                 <button
                   key={c.code}
                   type="button"
-
+                  className={`custom-select-option${
+                    isActive ? " custom-select-option--active" : ""
+                  }${disabled ? " custom-select-option--disabled" : ""}`}
 
 
 
