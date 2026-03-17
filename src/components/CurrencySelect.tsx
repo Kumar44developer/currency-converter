@@ -82,7 +82,10 @@ export default function CurrencySelect({
                   className={`custom-select-option${
                     isActive ? " custom-select-option--active" : ""
                   }${disabled ? " custom-select-option--disabled" : ""}`}
-
+                  role="option"
+                  aria-selected={isActive}
+                  onClick={() => handleSelect(c.code)}
+                >
 
 
 
