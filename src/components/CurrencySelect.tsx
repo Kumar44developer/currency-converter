@@ -29,7 +29,13 @@ export default function CurrencySelect({
   const [open, setOpen] = React.useState(false);
   const wrapperRef = React.useRef<HTMLDivElement | null>(null);
 
+  const selected = currencies.find((c) => c.code === value);
 
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
 
 
 
