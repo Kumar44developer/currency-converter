@@ -25,7 +25,9 @@ export default function CurrencySelect({
   currencies,
   id,
   disabledCodes = [],
-
+}: Props) {
+  const [open, setOpen] = React.useState(false);
+  const wrapperRef = React.useRef<HTMLDivElement | null>(null);
 
 
 
