@@ -50,7 +50,8 @@ export default function CurrencySelect({
   return (
     <div className="select-group">
       <label htmlFor={id}>{label}</label>
-
+      <div className="custom-select" ref={wrapperRef}>
+        <button
 
 
 
