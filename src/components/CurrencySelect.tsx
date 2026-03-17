@@ -76,7 +76,9 @@ export default function CurrencySelect({
               const disabled = disabledCodes.includes(c.code);
               const isActive = c.code === value;
               return (
-
+                <button
+                  key={c.code}
+                  type="button"
 
 
 
