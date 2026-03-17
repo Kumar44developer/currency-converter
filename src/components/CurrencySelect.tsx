@@ -8,6 +8,9 @@ type CurrencyOption = {
 };
 
 
+type Props = {
+  label: string;
+  value: string;
 
 
 
