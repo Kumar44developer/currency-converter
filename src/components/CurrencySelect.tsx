@@ -22,7 +22,9 @@ export default function CurrencySelect({
   label,
   value,
   onChange,
-
+  currencies,
+  id,
+  disabledCodes = [],
 
 
 
