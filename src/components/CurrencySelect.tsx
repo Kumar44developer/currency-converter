@@ -57,7 +57,13 @@ export default function CurrencySelect({
           className="custom-select-toggle"
           onClick={() => setOpen((prev) => !prev)}
         >
-
+          {selected && (
+            <>
+              {selected.flagUrl && (
+                <span className="custom-select-flag">
+                  <img src={selected.flagUrl} alt={selected.code} />
+                </span>
+              )}
 
 
 
