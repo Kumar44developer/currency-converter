@@ -18,6 +18,10 @@ type Props = {
 };
 
 
+export default function CurrencySelect({
+  label,
+  value,
+  onChange,
 
 
 
