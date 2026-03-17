@@ -69,7 +69,10 @@ export default function CurrencySelect({
             </>
           )}
 
-
+        </button>
+        {open && (
+          <div className="custom-select-menu" role="listbox">
+            {currencies.map((c) => {
 
 
 
