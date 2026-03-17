@@ -11,7 +11,8 @@ type CurrencyOption = {
 type Props = {
   label: string;
   value: string;
-
+  onChange: (code: string) => void;
+  currencies: CurrencyOption[];
 
 
 
