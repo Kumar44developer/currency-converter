@@ -52,7 +52,11 @@ export default function CurrencySelect({
       <label htmlFor={id}>{label}</label>
       <div className="custom-select" ref={wrapperRef}>
         <button
-
+          type="button"
+          id={id}
+          className="custom-select-toggle"
+          onClick={() => setOpen((prev) => !prev)}
+        >
 
 
 
