@@ -91,7 +91,10 @@ export default function CurrencySelect({
                       <img src={c.flagUrl} alt={c.code} />
                     </span>
                   )}
-
+                  <span className="custom-select-option-code">{c.code}</span>
+                  <span className="custom-select-option-name">{c.name}</span>
+                </button>
+              );
 
 
 
