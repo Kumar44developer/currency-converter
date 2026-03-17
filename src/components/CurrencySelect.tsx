@@ -73,7 +73,9 @@ export default function CurrencySelect({
         {open && (
           <div className="custom-select-menu" role="listbox">
             {currencies.map((c) => {
-
+              const disabled = disabledCodes.includes(c.code);
+              const isActive = c.code === value;
+              return (
 
 
 
