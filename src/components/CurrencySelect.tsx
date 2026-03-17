@@ -86,7 +86,11 @@ export default function CurrencySelect({
                   aria-selected={isActive}
                   onClick={() => handleSelect(c.code)}
                 >
-
+                  {c.flagUrl && (
+                    <span className="custom-select-option-flag">
+                      <img src={c.flagUrl} alt={c.code} />
+                    </span>
+                  )}
 
 
 
