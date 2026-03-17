@@ -73,6 +73,10 @@ describe("CurrencySelect", () => {
         currencies={currencies}
       />
     );
+    const select = screen.getByLabelText(/from/i) as HTMLSelectElement;
+    expect(select.value).toBe("USD");
+  });
+});
 
 
 
