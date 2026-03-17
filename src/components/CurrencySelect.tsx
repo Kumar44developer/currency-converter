@@ -41,7 +41,8 @@ export default function CurrencySelect({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-
+  const handleSelect = (code: string) => {
+    if (disabledCodes.includes(code)) return;
 
 
 
