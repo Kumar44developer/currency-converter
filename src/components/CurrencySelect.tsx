@@ -47,7 +47,9 @@ export default function CurrencySelect({
     setOpen(false);
   };
 
-
+  return (
+    <div className="select-group">
+      <label htmlFor={id}>{label}</label>
 
 
 
