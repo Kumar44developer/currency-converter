@@ -13,7 +13,9 @@ type Props = {
   value: string;
   onChange: (code: string) => void;
   currencies: CurrencyOption[];
-
+  id: string;
+  disabledCodes?: string[];
+};
 
 
 
