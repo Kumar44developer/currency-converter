@@ -43,6 +43,9 @@ export default function CurrencySelect({
 
   const handleSelect = (code: string) => {
     if (disabledCodes.includes(code)) return;
+    onChange(code);
+    setOpen(false);
+  };
 
 
 
