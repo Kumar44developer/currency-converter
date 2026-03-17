@@ -62,6 +62,8 @@ describe("CurrencySelect", () => {
 
 
 
+  it("maintains selected value", () => {
+    const onChange = vi.fn();
 
 
 
