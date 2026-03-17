@@ -64,7 +64,10 @@ export default function CurrencySelect({
                   <img src={selected.flagUrl} alt={selected.code} />
                 </span>
               )}
-
+              <span className="custom-select-code">{selected.code}</span>
+              <span className="custom-select-name">{selected.name}</span>
+            </>
+          )}
 
 
 
