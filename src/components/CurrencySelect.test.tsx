@@ -64,7 +64,10 @@ describe("CurrencySelect", () => {
 
   it("maintains selected value", () => {
     const onChange = vi.fn();
-
+    render(
+      <CurrencySelect
+        id="from"
+        label="From"
 
 
 
