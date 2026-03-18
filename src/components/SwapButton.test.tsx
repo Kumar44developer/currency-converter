@@ -16,6 +16,10 @@ describe("SwapButton", () => {
     const onClick = vi.fn();
     render(<SwapButton onClick={onClick} />);
     expect(
+      screen.getByRole("button", { name: /swap currencies/i })
+    ).toBeInTheDocument();
+  });
+});
 
 
 
