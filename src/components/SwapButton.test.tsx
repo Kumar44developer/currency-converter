@@ -12,7 +12,8 @@ describe("SwapButton", () => {
     expect(onClick).toHaveBeenCalled();
   });
 
-
+  it("exposes accessible name", () => {
+    const onClick = vi.fn();
 
 
 
