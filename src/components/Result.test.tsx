@@ -6,3 +6,6 @@ import Result from "./Result";
 
 describe("Result", () => {
   it("renders formatted output", () => {
+    render(<Result amount={1.234} from="USD" to="EUR" total={2.345} />);
+    expect(screen.getByText(/usd =/i)).toBeInTheDocument();
+  });
