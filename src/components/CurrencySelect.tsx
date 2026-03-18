@@ -95,6 +95,13 @@ export default function CurrencySelect({
                   <span className="custom-select-option-name">{c.name}</span>
                 </button>
               );
+           })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 
 
