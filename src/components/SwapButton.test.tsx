@@ -9,7 +9,8 @@ describe("SwapButton", () => {
     const onClick = vi.fn();
     render(<SwapButton onClick={onClick} />);
     fireEvent.click(screen.getByRole("button", { name: /swap currencies/i }));
-
+    expect(onClick).toHaveBeenCalled();
+  });
 
 
 
