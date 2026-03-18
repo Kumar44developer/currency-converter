@@ -8,7 +8,9 @@ type Props = {
   total: number;
 };
 
-
+export default function Result({ amount, from, to, total }: Props) {
+  const format = new Intl.NumberFormat(undefined, { maximumFractionDigits: 2 });
+  return (
 
 
 
