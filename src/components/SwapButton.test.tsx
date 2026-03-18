@@ -7,7 +7,8 @@ import SwapButton from "./SwapButton";
 describe("SwapButton", () => {
   it("invokes onClick when pressed", () => {
     const onClick = vi.fn();
-
+    render(<SwapButton onClick={onClick} />);
+    fireEvent.click(screen.getByRole("button", { name: /swap currencies/i }));
 
 
 
