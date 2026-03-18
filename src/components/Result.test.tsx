@@ -9,3 +9,31 @@ describe("Result", () => {
     render(<Result amount={1.234} from="USD" to="EUR" total={2.345} />);
     expect(screen.getByText(/usd =/i)).toBeInTheDocument();
   });
+
+
+  it("rounds to two fraction digits", () => {
+    render(<Result amount={1.2399} from="USD" to="EUR" total={2.996} />);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
