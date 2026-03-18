@@ -9,6 +9,12 @@ describe("convertAmount", () => {
   });
 
 
+  it("throws when toRate is not a number", () => {
+    // @ts-expect-error intentional bad input for test
+    expect(() => convertAmount(1, undefined)).toThrow(
+      /Target currency not in response/
+    );
+  });
 
 
 
