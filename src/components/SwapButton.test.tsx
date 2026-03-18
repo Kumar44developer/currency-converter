@@ -4,7 +4,9 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import SwapButton from "./SwapButton";
 
 
-
+describe("SwapButton", () => {
+  it("invokes onClick when pressed", () => {
+    const onClick = vi.fn();
 
 
 
