@@ -10,6 +10,10 @@ export default function SwapButton({ onClick }: Props) {
       className="swap"
       onClick={onClick}
     >
+      ⇄
+    </button>
+  );
+}
 
 
 
