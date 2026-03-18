@@ -14,7 +14,8 @@ describe("SwapButton", () => {
 
   it("exposes accessible name", () => {
     const onClick = vi.fn();
-
+    render(<SwapButton onClick={onClick} />);
+    expect(
 
 
 
