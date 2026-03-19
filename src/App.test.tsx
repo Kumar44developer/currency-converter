@@ -45,7 +45,9 @@ describe("App", () => {
     fireEvent.click(screen.getByRole("button", { name: /get exchange rate/i }));
 
 
-
+    await waitFor(() => {
+      expect(screen.getByText(/eur =/i)).toBeInTheDocument();
+    });
 
 
 
