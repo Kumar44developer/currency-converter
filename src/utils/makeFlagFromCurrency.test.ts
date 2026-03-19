@@ -6,7 +6,9 @@ describe("makeFlagFromCurrency", () => {
     expect(makeFlagFromCurrency("USD")).toBe("🇺🇸");
   });
 
-
+  it("uses EU flag for EUR", () => {
+    expect(makeFlagFromCurrency("EUR")).toBe("🇪🇺");
+  });
 
 
 
