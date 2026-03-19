@@ -35,7 +35,8 @@ describe("App", () => {
     });
     render(<App />);
 
-
+    const fromSelect = await screen.findByLabelText(/from/i);
+    const toSelect = screen.getByLabelText(/to/i);
 
 
 
