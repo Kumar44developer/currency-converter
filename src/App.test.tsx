@@ -93,6 +93,11 @@ describe("App", () => {
       rates: { EUR: 3 },
     });
 
+    render(<App />);
+
+    const input = await screen.findByLabelText(/enter amount/i);
+    fireEvent.change(input, { target: { value: "1" } });
+    
 
 
 
