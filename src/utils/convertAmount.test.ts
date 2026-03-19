@@ -23,6 +23,8 @@ describe("convertAmount", () => {
   });
 
 
+  it("handles zero amount producing Infinity rate", () => {
+    const { total, rate } = convertAmount(0, 5);
 
 
 
