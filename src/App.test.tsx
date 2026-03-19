@@ -20,7 +20,10 @@ describe("App", () => {
   beforeEach(() => {
     vi.resetAllMocks();
     (fetchCurrencies as any).mockResolvedValue({
-
+      USD: "US Dollar",
+      EUR: "Euro",
+    });
+  });
 
 
 
