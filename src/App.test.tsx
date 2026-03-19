@@ -58,6 +58,9 @@ describe("App", () => {
   });
 
 
+  it("shows error when conversion fails", async () => {
+    (getRates as any).mockRejectedValue(new Error("boom"));
+    render(<App />);
 
 
 
