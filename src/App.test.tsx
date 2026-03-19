@@ -87,7 +87,11 @@ describe("App", () => {
       rates: { EUR: 3 },
     });
 
-
+    (getRates as any).mockResolvedValueOnce({
+      amount: 1,
+      base: "USD",
+      rates: { EUR: 3 },
+    });
 
 
 
