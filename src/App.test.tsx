@@ -68,6 +68,8 @@ describe("App", () => {
     fireEvent.click(screen.getByRole("button", { name: /get exchange rate/i }));
 
 
+    await screen.findByText(/boom/i);
+  });
 
 
 
