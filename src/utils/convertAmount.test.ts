@@ -29,7 +29,12 @@ describe("convertAmount", () => {
     expect(rate).toBe(Infinity);
   });
 
-
+  it("handles negative amounts", () => {
+    const { total, rate } = convertAmount(-2, 8);
+    expect(total).toBe(8);
+    expect(rate).toBe(-4);
+  });
+});
 
 
 
