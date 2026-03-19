@@ -25,7 +25,9 @@ describe("convertAmount", () => {
 
   it("handles zero amount producing Infinity rate", () => {
     const { total, rate } = convertAmount(0, 5);
-
+    expect(total).toBe(5);
+    expect(rate).toBe(Infinity);
+  });
 
 
 
