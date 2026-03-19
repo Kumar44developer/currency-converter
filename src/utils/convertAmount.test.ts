@@ -16,7 +16,8 @@ describe("convertAmount", () => {
     );
   });
 
-
+  it("handles decimal amounts", () => {
+    const { total, rate } = convertAmount(2.5, 7.5);
 
 
 
