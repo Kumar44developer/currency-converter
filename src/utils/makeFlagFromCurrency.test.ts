@@ -11,7 +11,9 @@ describe("makeFlagFromCurrency", () => {
   });
 
 
-
+  it("is case-insensitive for input code", () => {
+    expect(makeFlagFromCurrency("gbp")).toBe("🇬🇧");
+  });
 
 
 
