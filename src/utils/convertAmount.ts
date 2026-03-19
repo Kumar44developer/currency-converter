@@ -1,1 +1,31 @@
+export function convertAmount(amount: number, toRate: number): { rate: number; total: number } {
+  const total = toRate;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
