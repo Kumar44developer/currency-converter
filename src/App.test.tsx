@@ -8,6 +8,9 @@ vi.mock("./api/fetchCurrencies", () => ({
   fetchCurrencies: vi.fn().mockResolvedValue({ USD: "US Dollar", EUR: "Euro" }),
 }));
 
+vi.mock("./api/getRates", () => ({
+  getRates: vi.fn(),
+}));
 
 
 
