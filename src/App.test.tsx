@@ -16,6 +16,10 @@ import { fetchCurrencies } from "./api/fetchCurrencies";
 import { getRates } from "./api/getRates";
 
 
+describe("App", () => {
+  beforeEach(() => {
+    vi.resetAllMocks();
+    (fetchCurrencies as any).mockResolvedValue({
 
 
 
