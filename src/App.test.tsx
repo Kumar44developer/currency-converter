@@ -4,7 +4,9 @@ import "@testing-library/jest-dom";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import App from "./App";
 
-
+vi.mock("./api/fetchCurrencies", () => ({
+  fetchCurrencies: vi.fn().mockResolvedValue({ USD: "US Dollar", EUR: "Euro" }),
+}));
 
 
 
