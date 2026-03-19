@@ -18,7 +18,9 @@ describe("convertAmount", () => {
 
   it("handles decimal amounts", () => {
     const { total, rate } = convertAmount(2.5, 7.5);
-
+    expect(total).toBe(7.5);
+    expect(rate).toBeCloseTo(3.0);
+  });
 
 
 
