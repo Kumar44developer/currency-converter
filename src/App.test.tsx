@@ -71,7 +71,15 @@ describe("App", () => {
     await screen.findByText(/boom/i);
   });
 
+  
 
+  it("swaps currencies and fetches swapped rate when valid", async () => {
+    // First convert: from=EUR to=USD
+    (getRates as any).mockResolvedValueOnce({
+      amount: 1,
+      base: "EUR",
+      rates: { USD: 2 },
+    });
 
 
 
