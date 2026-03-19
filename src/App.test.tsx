@@ -26,7 +26,9 @@ describe("App", () => {
   });
 
 
-
+  it("loads currencies and converts amount", async () => {
+    // After currencies load, App normalizes to from=EUR, to=USD
+    (getRates as any).mockResolvedValue({
 
 
 
