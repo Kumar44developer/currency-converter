@@ -42,6 +42,7 @@ describe("App", () => {
     fireEvent.change(input, { target: { value: "1" } });
 
 
+    fireEvent.click(screen.getByRole("button", { name: /get exchange rate/i }));
 
 
 
