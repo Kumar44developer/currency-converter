@@ -50,6 +50,12 @@ describe("App", () => {
     });
 
 
+    expect(getRates).toHaveBeenCalledWith(
+      1,
+      (fromSelect as HTMLSelectElement).value,
+      (toSelect as HTMLSelectElement).value
+    );
+  });
 
 
 
