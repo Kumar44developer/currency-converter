@@ -38,7 +38,8 @@ describe("App", () => {
     const fromSelect = await screen.findByLabelText(/from/i);
     const toSelect = screen.getByLabelText(/to/i);
 
-
+    const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    fireEvent.change(input, { target: { value: "1" } });
 
 
 
