@@ -4,6 +4,13 @@ export function makeFlagFromCurrency(code: string): string | undefined {
   if (!/^[A-Za-z]{2}$/.test(region)) return undefined;
 
 
+  const A = 0x1f1e6;
+  const flag = String.fromCodePoint(
+    ...region
+      .toUpperCase()
+      .split("")
+      .map((ch) => A + ch.charCodeAt(0) - 65)
+  );
 
 
 
