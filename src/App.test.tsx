@@ -12,7 +12,8 @@ vi.mock("./api/getRates", () => ({
   getRates: vi.fn(),
 }));
 
-
+import { fetchCurrencies } from "./api/fetchCurrencies";
+import { getRates } from "./api/getRates";
 
 
 
