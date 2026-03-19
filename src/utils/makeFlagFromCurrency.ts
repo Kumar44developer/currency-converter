@@ -14,6 +14,8 @@ export function makeFlagFromCurrency(code: string): string | undefined {
 
 
 
+  return flag;
+}
 
 
 
