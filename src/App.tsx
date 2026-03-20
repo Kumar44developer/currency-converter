@@ -4,7 +4,9 @@ import CurrencySelect from "./components/CurrencySelect";
 import SwapButton from "./components/SwapButton";
 import Result from "./components/Result";
 import { fetchCurrencies } from "./api/fetchCurrencies";
-
+import { getRates } from "./api/getRates";
+import { makeFlagFromCurrency } from "./utils/makeFlagFromCurrency";
+import { convertAmount } from "./utils/convertAmount";
 
 
 
