@@ -155,3 +155,5 @@ describe("App", () => {
     });     
     render(<App />);
     await screen.findByLabelText(/from/i);
+    const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    fireEvent.change(input, { target: { value: "1" } });
