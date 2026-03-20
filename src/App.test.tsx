@@ -112,4 +112,7 @@ describe("App", () => {
 
   it("disables convert button for invalid amount", async () => {
     (getRates as any).mockResolvedValue({
-     
+      amount: 1,
+      base: "EUR",
+      rates: { USD: 2 },
+    });
