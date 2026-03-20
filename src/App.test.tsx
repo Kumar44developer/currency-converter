@@ -177,5 +177,7 @@ describe("App", () => {
       base: "EUR",
       rates: { USD: 2 },
     });
+    render(<App />);
+    await screen.findByLabelText(/from/i);    
     
      
