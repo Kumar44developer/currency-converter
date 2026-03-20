@@ -120,3 +120,5 @@ describe("App", () => {
     await screen.findByLabelText(/from/i);
     const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
     const button = screen.getByRole("button", { name: /get exchange rate/i });
+    fireEvent.change(input, { target: { value: "0" } });
+    expect(button).toBeDisabled();
