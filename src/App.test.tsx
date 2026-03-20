@@ -140,4 +140,5 @@ describe("App", () => {
     await screen.findByLabelText(/from/i);
     expect(
       screen.getByText(/enter an amount and click convert/i)
-     
+    ).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: /get exchange rate/i }));     
