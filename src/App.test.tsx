@@ -109,3 +109,7 @@ describe("App", () => {
     const convertBtn = await screen.findByRole("button", {
       name: /get exchange rate/i,
     });
+
+  it("disables convert button for invalid amount", async () => {
+    (getRates as any).mockResolvedValue({
+     
