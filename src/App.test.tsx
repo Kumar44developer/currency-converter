@@ -70,7 +70,10 @@ describe("App", () => {
 
     await screen.findByText(/boom/i);
   });
-
+    fireEvent.click(convertBtn);
+    await screen.findByText(/usd =/i);
+    expect(getRates).toHaveBeenCalledTimes(3);
+  });
   
 
   it("swaps currencies and fetches swapped rate when valid", async () => {
