@@ -136,6 +136,7 @@ describe("App", () => {
           )
         )
     );
-
+    render(<App />);
+    await screen.findByLabelText(/from/i);
 
      
