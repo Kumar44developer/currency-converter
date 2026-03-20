@@ -170,5 +170,9 @@ describe("App", () => {
       screen.getByText(/enter an amount and click convert/i)
     ).toBeInTheDocument();
   });
+
+  it("does not fetch on swap when amount invalid", async () => {
+    (getRates as any).mockResolvedValue({
+
     
      
