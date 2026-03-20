@@ -122,3 +122,6 @@ describe("App", () => {
     const button = screen.getByRole("button", { name: /get exchange rate/i });
     fireEvent.change(input, { target: { value: "0" } });
     expect(button).toBeDisabled();
+    fireEvent.change(input, { target: { value: "" } });
+    expect(button).toBeDisabled();
+  });
