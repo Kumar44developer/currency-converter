@@ -103,4 +103,6 @@ describe("App", () => {
 
     fireEvent.click(screen.getByRole("button", { name: /swap currencies/i }));
 
-
+    const convertBtn = await screen.findByRole("button", {
+      name: /get exchange rate/i,
+    });
