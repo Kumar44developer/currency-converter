@@ -138,5 +138,6 @@ describe("App", () => {
     );
     render(<App />);
     await screen.findByLabelText(/from/i);
-
+    expect(
+      screen.getByText(/enter an amount and click convert/i)
      
