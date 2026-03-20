@@ -118,3 +118,5 @@ describe("App", () => {
     });
     render(<App />);
     await screen.findByLabelText(/from/i);
+    const input = screen.getByLabelText(/enter amount/i) as HTMLInputElement;
+    const button = screen.getByRole("button", { name: /get exchange rate/i });
