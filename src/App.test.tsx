@@ -128,7 +128,14 @@ describe("App", () => {
 
   it("shows helper text initially and loading when converting", async () => {
     (getRates as any).mockImplementation(
-
+      () =>
+        new Promise((resolve) =>
+          setTimeout(
+            () => resolve({ amount: 1, base: "EUR", rates: { USD: 2 } }),
+            50
+          )
+        )
+    );
 
 
      
