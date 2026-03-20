@@ -150,4 +150,6 @@ describe("App", () => {
   it("clears result and error when inputs change", async () => {
     (getRates as any).mockResolvedValue({
       amount: 1,
-     
+      base: "EUR",
+      rates: { USD: 2 },
+    });     
