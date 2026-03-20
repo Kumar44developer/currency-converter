@@ -142,3 +142,7 @@ describe("App", () => {
       screen.getByText(/enter an amount and click convert/i)
     ).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: /get exchange rate/i }));     
+    expect(
+      await screen.findByText(/fetching latest rate/i)
+    ).toBeInTheDocument();
+  });
