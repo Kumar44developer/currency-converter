@@ -9,7 +9,9 @@ import { makeFlagFromCurrency } from "./utils/makeFlagFromCurrency";
 import { convertAmount } from "./utils/convertAmount";
 
 
-
+function App() {
+  const [amount, setAmount] = useState<string>("1");
+  const [from, setFrom] = useState<string>("USD");
 
 
 
