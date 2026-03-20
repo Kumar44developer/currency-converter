@@ -166,4 +166,9 @@ describe("App", () => {
       target: { value: "EUR" },
     });
 
+    expect(
+      screen.getByText(/enter an amount and click convert/i)
+    ).toBeInTheDocument();
+  });
+    
      
