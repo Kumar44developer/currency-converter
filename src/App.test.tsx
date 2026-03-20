@@ -159,3 +159,11 @@ describe("App", () => {
     fireEvent.change(input, { target: { value: "1" } });
     fireEvent.click(screen.getByRole("button", { name: /get exchange rate/i }));
     await screen.findByText(/eur =/i);
+
+
+    (getRates as any).mockRejectedValueOnce(new Error("oops"));
+    fireEvent.change(screen.getByLabelText(/to/i), {
+      target: { value: "EUR" },
+    });
+
+     
