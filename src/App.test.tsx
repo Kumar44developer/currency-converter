@@ -173,6 +173,9 @@ describe("App", () => {
 
   it("does not fetch on swap when amount invalid", async () => {
     (getRates as any).mockResolvedValue({
-
+      amount: 1,
+      base: "EUR",
+      rates: { USD: 2 },
+    });
     
      
