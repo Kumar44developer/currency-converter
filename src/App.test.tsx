@@ -146,3 +146,8 @@ describe("App", () => {
       await screen.findByText(/fetching latest rate/i)
     ).toBeInTheDocument();
   });
+
+  it("clears result and error when inputs change", async () => {
+    (getRates as any).mockResolvedValue({
+      amount: 1,
+     
