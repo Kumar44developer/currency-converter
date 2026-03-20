@@ -125,3 +125,10 @@ describe("App", () => {
     fireEvent.change(input, { target: { value: "" } });
     expect(button).toBeDisabled();
   });
+
+  it("shows helper text initially and loading when converting", async () => {
+    (getRates as any).mockImplementation(
+
+
+
+     
