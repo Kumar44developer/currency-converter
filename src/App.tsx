@@ -61,7 +61,8 @@ function App() {
     React.useEffect(() => {
     setTotal(null);
     setError(null);
-
+    setHasConverted(false);
+  }, [amount, from, to]);
 
 
 
