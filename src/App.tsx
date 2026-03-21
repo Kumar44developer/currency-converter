@@ -65,7 +65,10 @@ function App() {
   }, [amount, from, to]);
 
 
-
+  const isValidAmount = useMemo(() => {
+    const n = Number(amount);
+    return Number.isFinite(n) && n > 0;
+  }, [amount]);
 
 
 
