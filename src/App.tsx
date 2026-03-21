@@ -87,3 +87,9 @@ function App() {
       setLoading(false);
     }
   };
+
+
+  const handleSwap = async () => {
+    setFrom(to);
+    setTo(from);
+
