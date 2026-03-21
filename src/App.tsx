@@ -103,3 +103,6 @@ function App() {
         setTotal(swapped);
         setError(null);
       } catch (e: any) {
+        setError(e?.message || "Failed to fetch rate");
+        setTotal(null);
+      } finally {
