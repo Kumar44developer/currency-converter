@@ -106,3 +106,7 @@ function App() {
         setError(e?.message || "Failed to fetch rate");
         setTotal(null);
       } finally {
+        setLoading(false);
+      }
+    }
+  };
