@@ -110,3 +110,12 @@ function App() {
       }
     }
   };
+
+  return (
+    <div className="app-root">
+      <div className="card">
+        <h1>Currency Converter</h1>
+
+
+
+
