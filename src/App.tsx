@@ -14,7 +14,9 @@ function App() {
   const [from, setFrom] = useState<string>("USD");
   const [to, setTo] = useState<string>("NPR");
   const [total, setTotal] = useState<number | null>(null);
-
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [hasConverted, setHasConverted] = useState(false);
 
 
 
