@@ -17,6 +17,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [hasConverted, setHasConverted] = useState(false);
+  const [currencies, setCurrencies] = useState<
+    { code: string; name: string; flag?: string; flagUrl?: string }[]
+  >([]);
 
 
 
