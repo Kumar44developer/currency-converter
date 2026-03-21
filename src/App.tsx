@@ -54,7 +54,9 @@ function App() {
         // keep silent
       }
     }
-
+    loadSymbols();
+    return () => controller.abort();
+  }, []);
 
 
 
