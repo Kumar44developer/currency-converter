@@ -70,5 +70,7 @@ function App() {
     return Number.isFinite(n) && n > 0;
   }, [amount]);
 
-
+  const handleConvert = async () => {
+    if (!isValidAmount) return;
+    setError(null);
 
