@@ -58,6 +58,9 @@ function App() {
     return () => controller.abort();
   }, []);
 
+    React.useEffect(() => {
+    setTotal(null);
+    setError(null);
 
 
 
