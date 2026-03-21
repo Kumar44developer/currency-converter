@@ -117,5 +117,9 @@ function App() {
         <h1>Currency Converter</h1>
 
 
+        <AmountInput value={amount} onChange={setAmount} />
+
+        <div className="row">
+          <CurrencySelect
 
 
