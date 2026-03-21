@@ -79,4 +79,8 @@ function App() {
       const { total } = convertAmount(Number(amount), data.rates[to]);
       setTotal(total);
       setHasConverted(true);
+    }catch (e) {
+      setError(e?.message || "Failed to fetch rate");
+      setTotal(null);
+      setHasConverted(true);
     }
