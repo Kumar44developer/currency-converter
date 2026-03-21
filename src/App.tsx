@@ -36,7 +36,12 @@ function App() {
               : undefined;
 
 
-
+            return {
+              code,
+              name,
+              flag: makeFlagFromCurrency(code),
+              flagUrl,
+            };
 
 
 
