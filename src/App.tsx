@@ -28,7 +28,10 @@ function App() {
       try {
         const data = await fetchCurrencies(controller.signal);
         const list = Object.entries(data)
-
+          .map(([code, name]) => {
+            const region = code === "EUR" ? "EU" : code.slice(0, 2);
+            const isValidRegion = /^[A-Za-z]{2}$/.test(region);
+            const flagUrl = isValidRegion
 
 
 
