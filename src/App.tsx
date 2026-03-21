@@ -22,7 +22,9 @@ function App() {
   >([]);
 
 
-
+  React.useEffect(() => {
+    const controller = new AbortController();
+    async function loadSymbols() {
 
 
 
