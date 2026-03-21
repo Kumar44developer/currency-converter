@@ -46,7 +46,10 @@ function App() {
           .sort((a, b) => a.code.localeCompare(b.code));
         setCurrencies(list);
         const codes = list.map((c) => c.code);
-
+        if (!codes.includes(from) || !codes.includes(to) || from === to) {
+          setFrom(codes[0]);
+          setTo(codes.find((c) => c !== codes[0]) || codes[0]);
+        }
 
 
 
