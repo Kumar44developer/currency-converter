@@ -73,4 +73,10 @@ function App() {
   const handleConvert = async () => {
     if (!isValidAmount) return;
     setError(null);
-
+    setLoading(true);
+    try {
+      const data = await getRates(Number(amount), from, to);
+      const { total } = convertAmount(Number(amount), data.rates[to]);
+      setTotal(total);
+      setHasConverted(true);
+    }
