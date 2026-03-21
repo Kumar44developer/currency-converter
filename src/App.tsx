@@ -42,7 +42,10 @@ function App() {
               flag: makeFlagFromCurrency(code),
               flagUrl,
             };
-
+          })
+          .sort((a, b) => a.code.localeCompare(b.code));
+        setCurrencies(list);
+        const codes = list.map((c) => c.code);
 
 
 
