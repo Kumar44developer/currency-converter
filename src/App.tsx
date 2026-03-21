@@ -100,3 +100,6 @@ function App() {
           Number(amount),
           data.rates[from]
         );
+        setTotal(swapped);
+        setError(null);
+      } catch (e: any) {
