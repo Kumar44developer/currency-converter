@@ -32,6 +32,8 @@ function App() {
             const region = code === "EUR" ? "EU" : code.slice(0, 2);
             const isValidRegion = /^[A-Za-z]{2}$/.test(region);
             const flagUrl = isValidRegion
+              ? `https://flagcdn.com/24x18/${region.toLowerCase()}.png`
+              : undefined;
 
 
 
