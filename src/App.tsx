@@ -50,7 +50,10 @@ function App() {
           setFrom(codes[0]);
           setTo(codes.find((c) => c !== codes[0]) || codes[0]);
         }
-
+      } catch (e) {
+        // keep silent
+      }
+    }
 
 
 
