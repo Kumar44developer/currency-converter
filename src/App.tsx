@@ -92,4 +92,11 @@ function App() {
   const handleSwap = async () => {
     setFrom(to);
     setTo(from);
-
+    if (isValidAmount) {
+      try {
+        setLoading(true);
+        const data = await getRates(Number(amount), to, from);
+        const { total: swapped } = convertAmount(
+          Number(amount),
+          data.rates[from]
+        );
