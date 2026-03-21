@@ -83,4 +83,7 @@ function App() {
       setError(e?.message || "Failed to fetch rate");
       setTotal(null);
       setHasConverted(true);
+    } finally {
+      setLoading(false);
     }
+  };
