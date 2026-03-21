@@ -25,7 +25,9 @@ function App() {
   React.useEffect(() => {
     const controller = new AbortController();
     async function loadSymbols() {
-
+      try {
+        const data = await fetchCurrencies(controller.signal);
+        const list = Object.entries(data)
 
 
 
