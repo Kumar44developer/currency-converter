@@ -146,3 +146,7 @@ function App() {
         )}          
         {loading && <p className="result">Fetching latest rate…</p>}
         {!hasConverted && !loading && !error && (
+          <p className="result" style={{ color: "#666" }}>
+            Enter an amount and click convert to see the result.
+          </p>
+        )}
