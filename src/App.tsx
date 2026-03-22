@@ -128,4 +128,5 @@ function App() {
             currencies={currencies}
             disabledCodes={[to]}
           />
-
+          <SwapButton onClick={handleSwap} />
+          <CurrencySelect
