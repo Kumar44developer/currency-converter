@@ -150,3 +150,6 @@ function App() {
             Enter an amount and click convert to see the result.
           </p>
         )}
+        {total != null && !loading && !error && hasConverted && (
+          <Result amount={Number(amount)} from={from} to={to} total={total} />
+        )}
