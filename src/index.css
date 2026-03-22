@@ -27,7 +27,8 @@ body {
 .card {
   width: 100%;
   max-width: 440px;
-
+  background: var(--card);
+  border-radius: 16px;
 
 
 
