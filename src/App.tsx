@@ -153,3 +153,10 @@ function App() {
         {total != null && !loading && !error && hasConverted && (
           <Result amount={Number(amount)} from={from} to={to} total={total} />
         )}
+
+
+        <button
+          className="btn-primary"
+          onClick={handleConvert}
+          disabled={!isValidAmount || loading}
+        >          
