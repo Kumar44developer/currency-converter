@@ -137,3 +137,10 @@ function App() {
             currencies={currencies}
             disabledCodes={[from]}
           />
+
+
+        {error && (
+          <p className="result" style={{ color: "#b91c1c" }}>
+            {error}
+          </p>
+        )}          
