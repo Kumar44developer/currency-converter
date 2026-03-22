@@ -17,7 +17,9 @@ body {
   background: var(--bg);
 }
 
-
+.app-root {
+  min-height: 100%;
+  display: grid;
 
 
 
