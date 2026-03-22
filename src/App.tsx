@@ -121,5 +121,11 @@ function App() {
 
         <div className="row">
           <CurrencySelect
-
+            id="from"
+            label="From"
+            value={from}
+            onChange={setFrom}
+            currencies={currencies}
+            disabledCodes={[to]}
+          />
 
