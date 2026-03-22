@@ -160,3 +160,6 @@ function App() {
           onClick={handleConvert}
           disabled={!isValidAmount || loading}
         >          
+          {loading ? "Loading…" : "Get Exchange Rate"}
+        </button>
+      </div>
