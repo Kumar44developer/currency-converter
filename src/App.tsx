@@ -163,3 +163,8 @@ function App() {
           {loading ? "Loading…" : "Get Exchange Rate"}
         </button>
       </div>
+    </div>
+  );
+}
+
+export default App;
