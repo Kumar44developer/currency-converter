@@ -57,7 +57,9 @@ input, select, button {
   margin: 16px 0 8px;
 }
 
-
+.row > * {
+  min-width: 0;
+}
 
 
 
