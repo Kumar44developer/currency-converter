@@ -42,7 +42,9 @@ input, select, button {
 }
 
 
-
+.help {
+  display: block;
+  margin-top: 6px;
 
 
 
