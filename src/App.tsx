@@ -144,3 +144,5 @@ function App() {
             {error}
           </p>
         )}          
+        {loading && <p className="result">Fetching latest rate…</p>}
+        {!hasConverted && !loading && !error && (
