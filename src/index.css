@@ -36,7 +36,10 @@ body {
 
 h1 { margin: 0 0 16px; text-align: center; }
 button { cursor: pointer; }
-
+label { display: block; font-weight: 600; margin: 12px 0 8px; }
+input, select, button {
+  font: inherit;
+}
 
 
 
