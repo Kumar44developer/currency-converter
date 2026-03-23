@@ -61,7 +61,9 @@ input, select, button {
   min-width: 0;
 }
 
-
+.input, .select {
+  width: 100%;
+  padding: 14px 12px;
 
 
 
