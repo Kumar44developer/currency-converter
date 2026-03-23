@@ -137,3 +137,7 @@ input, select, button {
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
+
+.custom-select-option {
+  width: 100%;
+  padding: 8px 12px 8px 44px;
