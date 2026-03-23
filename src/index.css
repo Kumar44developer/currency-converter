@@ -112,3 +112,9 @@ input, select, button {
   object-fit: cover;
   display: block;
 }
+
+.custom-select-code {
+  font-weight: 600;
+}
+
+
