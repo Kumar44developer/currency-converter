@@ -117,4 +117,7 @@ input, select, button {
   font-weight: 600;
 }
 
-
+.custom-select-name {
+  color: var(--muted);
+  font-size: 12px;
+}
