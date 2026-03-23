@@ -149,3 +149,7 @@ input, select, button {
   text-align: left;
   cursor: pointer;
 }
+
+.custom-select-option:hover:not(.custom-select-option--disabled) {
+  background: #f3f4ff;
+}
