@@ -70,7 +70,9 @@ input, select, button {
 }
 
 
-
+.custom-select {
+  position: relative;
+}
 
 
 
