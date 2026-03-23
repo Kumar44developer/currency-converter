@@ -88,6 +88,12 @@ input, select, button {
 }
 
 
+.custom-select-toggle:focus {
+  box-shadow: 0 0 0 2px rgba(124,108,255,0.35);
+  border-color: var(--primary);
+}
+
+
 
 
 
