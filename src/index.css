@@ -160,3 +160,7 @@ input, select, button {
 }
 
 
+.custom-select-option--disabled {
+  opacity: 0.4;
+  cursor: default;
+}
