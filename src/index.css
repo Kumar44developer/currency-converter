@@ -169,4 +169,8 @@ input, select, button {
   position: absolute;
   left: 12px;
   width: 24px;
-
+  height: 18px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+}
