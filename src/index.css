@@ -94,7 +94,10 @@ input, select, button {
 }
 
 
-
+.custom-select-flag {
+  position: absolute;
+  left: 12px;
+  top: 50%;
 
 
 
