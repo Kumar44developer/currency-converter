@@ -164,3 +164,9 @@ input, select, button {
   opacity: 0.4;
   cursor: default;
 }
+
+.custom-select-option-flag {
+  position: absolute;
+  left: 12px;
+  width: 24px;
+
