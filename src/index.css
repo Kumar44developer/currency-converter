@@ -132,5 +132,8 @@ input, select, button {
   max-height: 260px;
   overflow-y: auto;
   background: #fff;
-
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
 
