@@ -153,3 +153,10 @@ input, select, button {
 .custom-select-option:hover:not(.custom-select-option--disabled) {
   background: #f3f4ff;
 }
+
+
+.custom-select-option--active {
+  background: #e0e3ff;
+}
+
+
