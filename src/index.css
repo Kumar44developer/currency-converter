@@ -208,6 +208,10 @@ input, select, button {
 }
 
 
+.result {
+  color: var(--text);
+  margin: 8px 0 16px;
+}
 
 
 
