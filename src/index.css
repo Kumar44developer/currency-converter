@@ -197,6 +197,7 @@ input, select, button {
   font-size: 12px;
 }
 
+.input:focus, .select:focus { box-shadow: 0 0 0 3px rgba(124,108,255,0.35); border-color: #c7c9ff; }
 
 
 
