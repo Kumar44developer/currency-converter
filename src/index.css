@@ -213,7 +213,10 @@ input, select, button {
   margin: 8px 0 16px;
 }
 
-
+.btn-primary {
+  width: 100%;
+  background: var(--primary);
+  color: #fff;
 
 
 
