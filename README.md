@@ -100,40 +100,40 @@ User Input (Amount & Currencies)
 
 ```
 project Number3/
-├── index.html                  # HTML entry point
-├── package.json                # Project dependencies and script definitions
-├── package-lock.json           # Lockfile for deterministic package installations
-├── tsconfig.json               # TypeScript compiler configuration for source files
-├── tsconfig.node.json          # TypeScript compiler configuration for build tools
-├── vite.config.ts              # Vite configuration with Vitest integration
-├── .gitignore                  # Git ignore definitions
-├── DOCUMENTATION.md            # In-depth developer guide and reference
-├── README.md                   # Project overview and instructions
+├── index.html                  
+├── package.json              
+├── package-lock.json           
+├── tsconfig.json             
+├── tsconfig.node.json        
+├── vite.config.ts             
+├── .gitignore                  
+├── DOCUMENTATION.md          
+├── README.md               
 └── src/
-    ├── main.tsx                # Application mounting entry point
-    ├── App.tsx                 # Root application container and controller
-    ├── App.test.tsx            # Full integration tests for App workflows
-    ├── index.css               # Global stylesheet and CSS variables
-    ├── setupTests.ts           # Vitest and Testing Library environment setup
+    ├── main.tsx               
+    ├── App.tsx                 
+    ├── App.test.tsx           
+    ├── index.css              
+    ├── setupTests.ts          
     ├── api/
-    │   ├── fetchCurrencies.ts  # Fetches supported currencies list
-    │   ├── fetchCurrencies.test.ts # Tests for currency fetching
-    │   ├── getRates.ts         # Requests real-time conversion rates
-    │   └── getRates.test.ts    # Tests for exchange rate fetching
+    │   ├── fetchCurrencies.ts 
+    │   ├── fetchCurrencies.test.ts 
+    │   ├── getRates.ts        
+    │   └── getRates.test.ts    
     ├── components/
-    │   ├── AmountInput.tsx     # Validated numeric input component
-    │   ├── AmountInput.test.tsx # Unit tests for AmountInput
-    │   ├── CurrencySelect.tsx  # Select component with flag rendering
-    │   ├── CurrencySelect.test.tsx # Unit tests for CurrencySelect
-    │   ├── Result.tsx          # Formatted exchange rate result display
-    │   ├── Result.test.tsx     # Unit tests for Result component
-    │   ├── SwapButton.tsx      # Accessible currency swap button
-    │   └── SwapButton.test.tsx # Unit tests for SwapButton
+    │   ├── AmountInput.tsx    
+    │   ├── AmountInput.test.tsx 
+    │   ├── CurrencySelect.tsx  
+    │   ├── CurrencySelect.test.tsx 
+    │   ├── Result.tsx           
+    │   ├── Result.test.tsx    
+    │   ├── SwapButton.tsx     
+    │   └── SwapButton.test.tsx 
     └── utils/
-        ├── convertAmount.ts    # Exchange rate computation helper
-        ├── convertAmount.test.ts # Unit tests for rate calculation
-        ├── makeFlagFromCurrency.ts # Flag emoji generator from currency code
-        └── makeFlagFromCurrency.test.ts # Unit tests for flag generator
+        ├── convertAmount.ts   
+        ├── convertAmount.test.ts
+        ├── makeFlagFromCurrency.ts 
+        └── makeFlagFromCurrency.test.ts 
 ```
 
 ---
