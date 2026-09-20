@@ -79,7 +79,7 @@ function App() {
       const { total } = convertAmount(Number(amount), data.rates[to]);
       setTotal(total);
       setHasConverted(true);
-    }catch (e) {
+    } catch (e: any) {
       setError(e?.message || "Failed to fetch rate");
       setTotal(null);
       setHasConverted(true);
@@ -137,7 +137,7 @@ function App() {
             currencies={currencies}
             disabledCodes={[from]}
           />
-
+        </div>
 
         {error && (
           <p className="result" style={{ color: "#b91c1c" }}>

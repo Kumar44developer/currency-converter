@@ -10,5 +10,5 @@ export default defineConfig({
     globals: true,
     css: true,
   },
-});
+} as any);
 

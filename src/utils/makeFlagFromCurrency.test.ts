@@ -18,7 +18,6 @@ describe("makeFlagFromCurrency", () => {
   it("returns undefined for invalid code", () => {
     expect(makeFlagFromCurrency("")).toBeUndefined();
     // single character cannot form a valid regional indicator pair
-    // @ts-expect-error testing invalid length
     expect(makeFlagFromCurrency("X")).toBeUndefined();
   });
 });
